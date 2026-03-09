@@ -1,0 +1,21 @@
+# Sistema simple de venta de motos
+
+# Entradas
+nombre_cliente = input("Ingrese el nombre del cliente: ")
+modelo_moto = input("Ingrese el modelo de la moto: ")
+precio_moto = float(input("Ingrese el precio de la moto: "))
+cantidad = int(input("Ingrese la cantidad de motos a comprar: "))
+
+# Proceso
+subtotal = precio_moto * cantidad
+iva = subtotal * 0.16
+total = subtotal + iva
+
+# Salidas
+print("\n----- RESUMEN DE LA COMPRA -----")
+print("Cliente:", nombre_cliente)
+print("Modelo de moto:", modelo_moto)
+print("Cantidad:", cantidad)
+print("Subtotal:", subtotal)
+print("IVA (16%):", iva)
+print("Total a pagar:", total)

@@ -1,0 +1,20 @@
+# Programa para calcular un presupuesto de compra
+
+# Entradas
+producto = input("Ingrese el producto: ")
+precio = float(input("Ingrese el precio del producto: "))
+cantidad = int(input("Ingrese la cantidad: "))
+
+# Proceso
+subtotal = precio * cantidad
+descuento = subtotal * 0.10   # 10% de descuento
+total = subtotal - descuento
+
+# Salidas
+print("\n----- PRESUPUESTO -----")
+print("Producto:", producto)
+print("Precio por unidad:", precio)
+print("Cantidad:", cantidad)
+print("Subtotal:", subtotal)
+print("Descuento (10%):", descuento)
+print("Total a pagar:", total)
